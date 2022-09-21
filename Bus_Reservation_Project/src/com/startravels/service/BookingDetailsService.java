@@ -7,7 +7,7 @@ import com.startravels.model.Bus;
 
 public class BookingDetailsService {
 
-	BookingDetailsDao bookingDetailsDao=new BookingDetailsDao();
+	static BookingDetailsDao bookingDetailsDao=new BookingDetailsDao();
 	
 	BusDao busDao=new BusDao();
 	
@@ -20,6 +20,11 @@ public class BookingDetailsService {
 		}
 		
 		return "bus Doesn't have enoghs seat";
+	}
+
+	public static  BookingDetails[]  displayBookingDetails() {
+		// TODO Auto-generated method stub
+		return bookingDetailsDao.displayBookingDetails();
 	}
 
 }

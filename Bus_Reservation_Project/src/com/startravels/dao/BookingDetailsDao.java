@@ -14,5 +14,9 @@ public class BookingDetailsDao{
 		return "Succesfully added Booking Details";
 		
 	}
+	public BookingDetails[] displayBookingDetails() {
+		// TODO Auto-generated method stub
+		return BookingDetailsArray ;
+	}
 
 }

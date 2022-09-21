@@ -50,5 +50,16 @@ public class BookingDetailsView {
 	     
 	  System.out.println(bookingDetailsService.addBookingDetails(bookingDetails));
 	}
+
+	public void displayBookingDetails() {
+		// TODO Auto-generated method stub
+		BookingDetails[]BookingDetails=BookingDetailsService.displayBookingDetails();
+		int i=0;
+		while(BookingDetails[i] != null) {
+			System.out.println(BookingDetails[i]);
+			i++;
+		}
+		
+	}
 	
 }
